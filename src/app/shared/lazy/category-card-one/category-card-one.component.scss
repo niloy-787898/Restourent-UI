@@ -1,0 +1,71 @@
+@import "src/theme/base";
+
+.card-item {
+  position: relative;
+  transition: all 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    img {
+      transition: 0.3s ease;
+      transform: scale(1.1) !important;
+
+    }
+  }
+
+  .card-image {
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      transition: all 0.2s ease;
+    }
+
+  }
+
+  .img-overlay {
+
+    background-color: #151515;
+    opacity: 0.4;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    content: "";
+    backface-visibility: hidden;
+
+  }
+
+  .card-desc {
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 30px 30px 30px 30px;
+
+    h6 {
+      font-size: 16px;
+      font-family: 'Poppins', serif;
+      font-weight: 700;
+      color: #4D8B55;
+      margin-bottom: 5px;
+    }
+
+    h5 {
+      margin: 0 0 8px 0;
+      font-size: 24px;
+      font-family: 'Poppins', serif;
+      font-weight: 700;
+      color: #FFFFFF;
+
+      &:hover {
+        color: #4D8B55;
+        transition: 0.2s ease;
+      }
+    }
+  }
+}
+

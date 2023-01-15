@@ -1,0 +1,27 @@
+@import "src/theme/exports/contact-home";
+@import "src/theme/exports/category-home";
+@import "src/theme/exports/overview-home";
+@import "src/theme/exports/_cardSixHome.scss";
+@import "src/theme/exports/cardbanner.scss";
+@import "src/theme/exports/heroHome.scss";
+@import "src/theme/exports/productCardOne.scss";
+@import "src/theme/exports/home-slider.scss";
+@import "src/theme/exports/header.scss";
+@import "src/theme/exports/tasty-product.scss";
+
+.main-section{
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+.mobile-menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 100%;
+}
+
+

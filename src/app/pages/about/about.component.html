@@ -1,0 +1,128 @@
+<!-- header-section -->
+<section class="main-section">
+   <div class="header-area">
+ <div class="container">
+   <div class="navbar-row">
+     <div class="logo">
+       <a href="">
+         <img
+           alt=""
+           src="../../../assets/images/logo/cdcl-logo.png"
+         />
+       </a>
+     </div>
+     <div class="navbar-item">
+       <ul>
+         <li>
+           <a routerLink="/"><span>Home</span></a>
+         </li>
+         <li>
+           <a routerLink="/about"><span>About US</span></a>
+         </li>
+         <li>
+           <a href="#"><span>Products</span></a>
+         </li>
+         <li>
+           <a routerLink="/contact"><span>Contact</span></a>
+         </li>
+       </ul>
+     </div>
+     <div class="navbar-icons">
+       <a href="#"
+         ><span class="fa-sharp fa-solid fa-phone-volume icon"></span
+         ><span class="number">0905-456-987-3</span></a
+       >
+     </div>
+     <div (click)="onToggle()" class="navbar-toggle">
+       <i [ngClass]="toggleMenu ? 'fas fa-bars' : 'fas fa-bars'"></i>
+       <!-- END Mobile View Menu -->
+     </div>
+     <div class="navbar-button">
+       <ul>
+         <li>
+           <a href="#"><i class="fa-solid fa-user"></i></a>
+         </li>
+         <li>
+           <a class="nav-link" href="#"
+             ><i class="fa-solid fa-bag-shopping"></i
+           ></a>
+         </li>
+         <li>
+           <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+         </li>
+       </ul>
+     </div>
+   </div>
+ </div>
+ <div class="overlay">
+
+ </div>
+ <!-- toggle -->
+ <div class="mobile-menu" [ngClass]="toggleMenu ? 'show' : 'hidden'">
+   <div class="toggle-menu">
+     <div class="container">
+       <div class="toggle-row">
+         <div class="toggle-top">
+           <div class="toggle-logo">
+             <a href="">
+               <img
+                 alt=""
+                 src="../../../assets/images/logo/cdcl-logo.png"
+               />
+             </a>
+           </div>
+           <div class="toggle-icon">
+             <i (click)="onToggle()" class="fa-solid fa-xmark"></i>
+           </div>
+         </div>
+         <div class="toggle-middle">
+           <ul class="toggle-menu">
+             <li><a routerLink="/">Home</a></li>
+             <li><a routerLink="/about">About US</a></li>
+             <li><a href="#">Products</a></li>
+             <li><a routerLink="/contact">Contact</a></li>
+           </ul>
+         </div>
+         <div class="toggle-bottom">
+           <ul>
+             <a class="nav-link" href="#"
+               ><i class="fa-solid fa-bag-shopping"></i
+             ></a>
+             <span href="">0</span>
+             <a class="menu-children" href="#"
+               ><i class="fa-solid fa-user"></i
+             ></a>
+           </ul>
+           <div class="nav-search">
+             <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+             <input placeholder="Search" type="text" />
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+</section>
+
+
+<!-- about section -->
+<section class="about-section">
+    <div>
+       <div class="about-area">
+          <div class="about-contant">
+           <div class="text-layout">
+             <h6>about us</h6>
+             <h1>Japanise
+               <br>Restaurant
+               <br>In Dhaka
+             </h1>
+             <div class="bottom-border"></div>
+             <div class="bottom-border"></div>
+             <p>The dailies? You know -- milk, bread, eggs -- the dailies. These are the things you eat that you find yourself running out each week (or each day) to purchase.</p>
+           </div>
+          </div>
+          <div class="about-img"></div>
+       </div>
+    </div>
+ </section>

@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="images">
+    <img [src]="data?.img" alt=" ">
+    <div class="hover-button">
+      <a routerLink="/product"><button class="btn-middle">View Details</button></a>
+    </div>
+  </div>
+  <a routerLink="/product"><h6>{{data?.name}}</h6></a>
+  
+  <p>
+    <del> {{data?.oprice}}</del> &nbsp;{{data?.price}}</p>
+  <div class="hover-button-2">
+    <a routerLink="/product"><button>View Details</button></a>
+    
+  </div>
+</div>

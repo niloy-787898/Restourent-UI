@@ -1,0 +1,153 @@
+.card {
+  text-align: center;
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0 40px 0;
+
+  h6 {
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    opacity: 0.8;
+  }
+
+  h6:hover {
+    color: #4D8B55;
+    cursor: pointer;
+  }
+
+  p {
+    color: #4D8B55;
+    font-size: 15px;
+    font-weight: 700;
+  }
+}
+
+.images {
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  img {
+    width: 100%;
+    max-width: 420px;
+
+    &:hover {
+      transform: rotateY(180deg);
+      transition: all 1s ease;
+      opacity: 0.5;
+      z-index: -1;
+    }
+  }
+
+  .hover-button {
+    position: absolute;
+    top: 40%;
+    right: 25%;
+    display: none;
+
+    button {
+      padding: 15px 35px;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 700;
+      color: #FFFFFF;
+      background:#4D8B55 ;
+      border: none;
+      opacity: 1 !important;
+      z-index: 1;
+
+      &:hover {
+        background: #151515;
+        color: #FFFFFF;
+        cursor: pointer;
+        opacity: 1 !important;
+
+      }
+    }
+  }
+  @media (max-width: 1500px) {
+    .hover-button {
+      top: 40%;
+      right: 20%;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .hover-button {
+    position: absolute;
+    top: 45%;
+    right: 25%;
+    display: none;
+    button {
+      padding: 10px 25px !important;
+    }
+  }
+}
+
+.images:hover {
+  .hover-button {
+    display: block;
+  }
+}
+
+
+.hover-button-2 {
+  display: none;
+  margin: 20px auto;
+  border-radius: 50px;
+
+
+  button {
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: 700;
+
+    border: none;
+  }
+
+  &:hover {
+      cursor: pointer;
+  }
+}
+
+@media (max-width: 1030px) {
+  .images:hover {
+    .hover-button {
+      display: none;
+    }
+  }
+  .hover-button-2 {
+    display: block;
+  }
+}
+
+@media (max-width: 1250px) {
+  .card {
+    padding: 0 0 50px 0;
+  }
+  .hover-button {
+    right: 18% !important;
+  }
+}
+
+@media (max-width: 999px) {
+  .card {
+    padding: 0 0 35px 0;
+  }
+}
+
+@media (max-width: 499px) {
+  .card {
+    padding: 0 0 35px 0;
+  }
+}
+
+
+
+
+

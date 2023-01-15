@@ -1,0 +1,77 @@
+@import 'src/theme/variables';
+
+//Home-Contact-CSS
+.home-contact {
+
+
+  .home-contact-main {
+    background-image: url(../../assets/images/static/contact-bg.png);
+    background-size: cover;
+    position: relative;
+    padding: 30px 0 0 50px;
+    z-index: 5;
+  }
+
+  .home-contact-sub {
+    background-image: url(../../assets/images/static/contact-girl-1.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+
+    .home-contact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 150px 0 150px 0;
+    }
+  }
+}
+
+//responsive
+@media (max-width: 1250px) {
+  .home-contact {
+    .home-contact-main {
+      padding: 0;
+    }
+    .home-contact-sub {
+      background-image: none;
+
+      .home-contact-grid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+    }
+  }
+}
+
+@media (max-width: 880px) {
+
+  .home-contact {
+    .home-contact-sub {
+      .home-contact-grid {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .home-contact-sub {
+    .home-contact-grid {
+      gap: 0;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+    .home-contact-sub {
+      background-image: none;
+      gap:0;
+      .home-contact-grid {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+    }
+}

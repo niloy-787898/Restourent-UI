@@ -1,0 +1,66 @@
+@import "src/theme/variables.scss";
+
+
+.card {
+  background: #212121;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 17px;
+  max-width: 380px;
+  max-height: 344px;
+  height: 100%;
+  color: #c8d5e4;
+  margin: 0 auto;
+
+  .icon {
+    i {
+      transition: .5s;
+      font-size: 50px;
+      color: #4D8B55;
+
+      &:hover {
+        transform: translateY(-8px);
+      }
+    }
+  }
+
+  .head {
+    margin-top: 10px;
+
+    h2 {
+      font-family: $font-en-poppins;
+      color: #FFFFFF;
+      font-size: 21px;
+      font-weight: 700;
+      text-align: center;
+      opacity: .9;
+
+    }
+
+  }
+
+  .paragraph {
+    text-align: center;
+
+    p {
+      font-family: $font-en-jost;
+
+      color: #FFFFFF;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.7;
+      text-align: center;
+      opacity: .7;
+    }
+  }
+}
+
+
+@media (max-width: 499px) {
+  .card {
+    padding: 50px 20px;
+  }
+}
+

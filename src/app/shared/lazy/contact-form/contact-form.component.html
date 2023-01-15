@@ -1,0 +1,10 @@
+<div class="home-contact-form">
+  <h1 class="header-white">Contact us </h1>
+  <span class="header black"> for booking a table</span>
+  <form (ngSubmit)="contactResult()" [formGroup]="contactform" class="form-main">
+    <input class="input" formControlName="name" name="name" placeholder="Name" type="text">
+    <input class="input" formControlName="phone" name="phone" placeholder="Phone" type="text">
+    <input class="input" formControlName="comment" name="comment" placeholder="Comment" type="text">
+    <button class="btn input">Book Now</button>
+  </form>
+</div>

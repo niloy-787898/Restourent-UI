@@ -1,0 +1,179 @@
+<!-- heder section -->
+<section class="main-section">
+  <div class="header-area">
+<div class="container">
+  <div class="navbar-row">
+    <div class="logo">
+      <a href="">
+        <img
+          alt=""
+          src="../../../assets/images/logo/cdcl-logo.png"
+        />
+      </a>
+    </div>
+    <div class="navbar-item">
+      <ul>
+        <li>
+          <a routerLink="/"><span>Home</span></a>
+        </li>
+        <li>
+          <a routerLink="/about"><span>About US</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Products</span></a>
+        </li>
+        <li>
+          <a routerLink="/contact"><span>Contact</span></a>
+        </li>
+      </ul>
+    </div>
+    <div class="navbar-icons">
+      <a href="#"
+        ><span class="fa-sharp fa-solid fa-phone-volume icon"></span
+        ><span class="number">0905-456-987-3</span></a
+      >
+    </div>
+    <div (click)="onToggle()" class="navbar-toggle">
+      <i [ngClass]="toggleMenu ? 'fas fa-bars' : 'fas fa-bars'"></i>
+      <!-- END Mobile View Menu -->
+    </div>
+    <div class="navbar-button">
+      <ul>
+        <li>
+          <a href="#"><i class="fa-solid fa-user"></i></a>
+        </li>
+        <li>
+          <a class="nav-link" href="#"
+            ><i class="fa-solid fa-bag-shopping"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="overlay">
+
+</div>
+<!-- toggle -->
+<div class="mobile-menu" [ngClass]="toggleMenu ? 'show' : 'hidden'">
+  <div class="toggle-menu">
+    <div class="container">
+      <div class="toggle-row">
+        <div class="toggle-top">
+          <div class="toggle-logo">
+            <a href="">
+              <img
+                alt=""
+                src="../../../assets/images/logo/cdcl-logo.png"
+              />
+            </a>
+          </div>
+          <div class="toggle-icon">
+            <i (click)="onToggle()" class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <div class="toggle-middle">
+          <ul class="toggle-menu">
+            <li><a routerLink="/">Home</a></li>
+            <li><a routerLink="/about">About US</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a routerLink="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="toggle-bottom">
+          <div class="nav-search">
+            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+            <input placeholder="Search" type="text" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- background image -->
+<div class="banner-area">
+  <div class="banner-area-main">
+    <!---slide-->
+    <div class="slide">
+      <div class="banner-img">
+        <img src="../../../assets/images/static/inner_header_03.jpg" alt="" />
+        <div class="image-overlay"></div>
+      </div>
+      <div class="slide-text">
+        <h3>Contact</h3>
+        <ul>
+          <li><a routerLink="/">Home</a></li>
+          <li>-</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="contact-section">
+  <div class="container">
+    <div class="grid-item">
+      <div class="flex-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <p class="bold-text">Location</p>
+        <p class="ligth-text">29 Nicolas str, New York, 987597-50</p>
+      </div>
+
+      <div class="flex-item">
+        <i class="fas fa-phone"></i>
+        <p class="bold-text">Phone</p>
+        <p class="ligth-text">0(800) 890-90-609</p>
+        <p class="ligth-other">0(800) 890-90-620</p>
+      </div>
+      <div class="flex-item">
+        <i  class="fas fa-envelope"></i>
+        <p class="bold-text">Email</p>
+        <p class="ligth-text">sale@like-themes.com</p>
+        <p class="ligth-other">tech@like-themes.com</p>
+      </div>
+
+      <div class="flex-item">
+        <i class="far fa-clock"></i>
+        <p class="bold-text">Working Hour</p>
+        <p class="ligth-text">Wednesday - Sunday</p>
+        <p class="ligth-other">7:00 AM - 5:00 PM</p>
+      </div>
+    </div>
+
+    <div class="map">
+     
+      <iframe
+      
+        class="map-set"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2799138154!2d-74.25987514580467!3d40.69767006377277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1667737878582!5m2!1sen!2sbd"
+        width="100%"
+        height="100%"
+        style="border: 0"
+        allowfullscreen=""
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      
+    </div>
+
+    <div class="contact-form">
+        <h4 class="text-h">Send Message</h4>
+        <div class="home-contact-form">
+            <h1 class="header-white">Contact us </h1>
+            <span class="header black"> for booking a table</span>
+            <form  class="form-main">
+              <input class="input"  name="name" placeholder="Name" type="text">
+              <input class="input" name="phone" placeholder="Phone" type="text">
+              <input class="input"  name="comment" placeholder="Comment" type="text">
+              <button class="btn input">Book Now</button>
+            </form>
+          </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,180 @@
+.hero-section {
+
+  .background-image-color {
+    background-image: url(../../assets/images/static/leaves_pattern_010.png);
+    background-color: #4D8B55;
+    padding: 90px;
+    margin: 2px;
+
+    .gird-row {
+      width: 100%;
+      height: 530px;
+      display: grid;
+      grid-template-columns: 60% 40%;
+      gap: 40px;
+
+      .left-side-content {
+        h2 {
+          font-family: 'Poppins', serif;
+          font-size: 80px;
+          font-weight: 700;
+          line-height: 1;
+          span {
+            color: #fff;
+          }
+        }
+        p {
+          font-family: 'Poppins', serif;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 1.9;
+          color: #c6c6c6;
+        }
+        .content-btn {
+          cursor: pointer;
+          margin-top: 100px;
+          font-family: 'Poppins', serif;
+          font-weight: 700;
+          display: inline-block;
+          padding: 28px 30px;
+          font-size: 14px;
+          min-width: 260px;
+          background-color:#151515;
+          color:#4D8B55 ;
+          border-radius: 40px;
+          transition: 0.8s;
+
+          &:hover {
+            background: #fff;
+            color: #4D8B55;
+            transform: scaleY(1);
+          }
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+
+            &:hover {
+              color: #000;
+            }
+          }
+        }
+      }
+      .right-side-image {
+
+        .hero-image {
+          position: absolute;
+          img {
+            width: 100%;
+          }
+        }
+        .widget-image {
+          position: relative;
+          right: 15px;
+          top: 20px;
+          img {
+            position: absolute;
+            width: 160px;
+          }
+          .widget-content {
+            position: relative;
+            display: inline-block;
+            top: 70px;
+            left: 13px;
+
+            h3 {
+              font-family: 'Poppins', serif;
+              font-size: 48px;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 1231px) {
+  .hero-section .background-image-color .gird-row {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .hero-section .background-image-color {
+    height: 1200px;
+  }
+  .right-side-image {
+    padding-right: 245px;
+  }
+  .hero-section .background-image-color .gird-row .left-side-content .content-btn {
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+}
+
+//@media(max-width: 500px) {
+//
+//  .hero-section .background-image-color .gird-row .left-side-content h2 {
+//    font-size: 70px;
+//
+//  }
+//  .hero-section .background-image-color .gird-row .left-side-content .content-btn {
+//    margin-bottom: 30px;
+//  }
+//}
+@media(max-width: 500px) {
+
+  .hero-section .background-image-color {
+    height: 1113px;
+  }
+  .hero-section .background-image-color .gird-row .left-side-content h2 {
+    font-size: 60px;
+  }
+  .hero-section .background-image-color .gird-row .right-side-image .hero-image img {
+    width: 80%;
+  }
+  .right-side-image {
+    padding-right: 288px;
+  }
+  .hero-section .background-image-color .gird-row .right-side-image .widget-image {
+    left: 25px;
+  }
+  .hero-section .background-image-color .gird-row .right-side-image .widget-image img {
+    width: 120px;
+  }
+  .hero-section .background-image-color .gird-row .right-side-image .widget-image .widget-content {
+    position: relative;
+    display: inline-block;
+    top: 48px;
+    left: 10px;
+  }
+  .hero-section .background-image-color .gird-row .right-side-image .widget-image .widget-content h3 {
+    font-size: 35px;
+  }
+  .hero-section .background-image-color .gird-row .left-side-content .content-btn {
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 370px) {
+  .right-side-image {
+    padding-right: 267px;
+  }
+  .hero-section .background-image-color .gird-row .left-side-content .content-btn {
+    margin-bottom: 30px;
+  }
+}
+@media(max-width: 354px) {
+  .right-side-image {
+    padding-right: 258px;
+  }
+  .hero-section .background-image-color .gird-row .left-side-content .content-btn {
+    margin-bottom: 30px;
+  }
+}
+
+

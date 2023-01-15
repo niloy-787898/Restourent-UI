@@ -1,0 +1,489 @@
+<div class="main-section">
+  <section class="home-slider-section">
+    <div class="Home-slider-main">
+      <!-- header -->
+      <div class="container">
+        <div class="navbar-row">
+          <div class="logo">
+            <a href="">
+              <img
+                alt=""
+                src="../../../assets/images/logo/cdcl-logo.png"
+              />
+            </a>
+          </div>
+          <div class="navbar-item">
+            <ul>
+              <li>
+                <a href="#"><span>Home</span></a>
+              </li>
+              <li>
+                <a routerLink="/about"><span>About US</span></a>
+              </li>
+              <li>
+                <a routerLink="/product-item"><span>Products</span></a>
+              </li>
+              <li>
+                <a routerLink="/contact"><span>Contact</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-icons">
+            <a href="#"
+              ><span class="fa-sharp fa-solid fa-phone-volume icon"></span
+              ><span class="number">0905-456-987-3</span></a
+            >
+          </div>
+          <div (click)="onToggle()" class="navbar-toggle">
+            <i [ngClass]="toggleMenu ? 'fas fa-bars' : 'fas fa-bars'"></i>
+            <!-- END Mobile View Menu -->
+          </div>
+          <div class="navbar-button">
+            <ul>
+              <li>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+              </li>
+              <li>
+                <a class="nav-link" href="#"
+                  ><i class="fa-solid fa-bag-shopping"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="overlay"></div>
+      
+
+      <div class="container">
+        <swiper
+          [autoplay]="{
+            delay: 3000
+          }"
+          [speed]="2500"
+          [navigation]="true"
+          class="mySwiper"
+        >
+          <ng-template *ngFor="let data of homelessness" swiperSlide>
+            <div class="dynamic-data">
+              <strong
+                ><h6>{{ data.heading }}</h6></strong
+              >
+              <p>{{ data.upper }}</p>
+              <p>{{ data.lower }}</p>
+              <button>Taste Coffee</button>
+            </div>
+          </ng-template>
+        </swiper>
+      </div>
+    </div>
+
+    <!-- toggle -->
+  <div class="mobile-menu" [ngClass]="toggleMenu ? 'show' : 'hidden'">
+    <div class="toggle-menu">
+      <div class="container">
+        <div class="toggle-row">
+          <div class="toggle-top">
+            <div class="toggle-logo">
+              <a href="">
+                <img
+                  alt=""
+                  src="../../../assets/images/logo/cdcl-logo.png"
+                />
+              </a>
+            </div>
+            <div class="toggle-icon">
+              <i (click)="onToggle()" class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div class="toggle-middle">
+            <ul class="toggle-menu">
+              <li><a routerLink="/">Home</a></li>
+              <li><a routerLink="/about">About US</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a routerLink="/contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="toggle-bottom">
+            <ul>
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-bag-shopping"></i
+              ></a>
+              <span href="">0</span>
+              <a class="menu-children" href="#"
+                ><i class="fa-solid fa-user"></i
+              ></a>
+            </ul>
+            <div class="nav-search">
+              <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+              <input placeholder="Search" type="text" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- END Home Category Section -->
+
+  <section class="category-section">
+    <div class="container">
+      <div class="card-area">
+        <app-category-card-one
+          *ngFor="let data of categories"
+          [data]="data"
+        ></app-category-card-one>
+      </div>
+    </div>
+  </section>
+  <!-- END Home Category Section -->
+
+  <section class="tasty-Products-section">
+    <div class="tasty-product-main-div">
+      <p>Kaffa Menu</p>
+      <h1>Tasty Products</h1>
+
+      <div class="product-menu-div">
+        <img
+          alt=""
+          class="item-image"
+          src="http://kaffa.like-themes.com/wp-content/uploads/2020/07/menu-bg.png"
+        />
+        <div class="mat-menu-div">
+          <mat-tab-group animation class="mat-tab-groups" Duration="100ms">
+            <mat-tab class="mat-tab" label="Chocolate">
+              <div class="menu-item-div">
+                <img
+                  alt=""
+                  class="item-img"
+                  src="http://kaffa.like-themes.com/wp-content/uploads/2019/06/01-1.png"
+                />
+                <div class="productName-div">
+                  <h1>
+                    Cappuccino 2
+                    <span
+                      >.................................................................</span
+                    >
+                    <span class="price"> $3.20</span>
+                  </h1>
+                  <p>Coffee 50%, milk 50%, 280 ml</p>
+                </div>
+              </div>
+              <div class="menu-item-div">
+                <img
+                  alt=""
+                  class="item-img"
+                  src="http://kaffa.like-themes.com/wp-content/uploads/2019/06/03-1-110x110.png"
+                />
+                <div class="productName-div">
+                  <h1>
+                    Cappuccino 2
+                    <span
+                      >.................................................................</span
+                    >
+                    <span class="price"> $3.20</span>
+                  </h1>
+                  <p>Coffee 50%, milk 50%, 280 ml</p>
+                </div>
+              </div>
+              <div class="menu-item-div">
+                <img
+                  alt=""
+                  class="item-img"
+                  src="http://kaffa.like-themes.com/wp-content/uploads/2019/06/01-1.png"
+                />
+                <div class="productName-div">
+                  <h1>
+                    Cappuccino 2
+                    <span
+                      >.................................................................</span
+                    >
+                    <span class="price"> $3.20</span>
+                  </h1>
+                  <p>Coffee 50%, milk 50%, 280 ml</p>
+                </div>
+              </div>
+              <div class="menu-item-div">
+                <img
+                  alt=""
+                  class="item-img"
+                  src="http://kaffa.like-themes.com/wp-content/uploads/2019/06/03-1-110x110.png"
+                />
+                <div class="productName-div">
+                  <h1>
+                    Cappuccino 2
+                    <span
+                      >.................................................................</span
+                    >
+                    <span class="price"> $3.20</span>
+                  </h1>
+                  <p>Coffee 50%, milk 50%, 280 ml</p>
+                </div>
+              </div>
+              <div class="menu-item-div">
+                <img
+                  alt=""
+                  class="item-img"
+                  src="http://kaffa.like-themes.com/wp-content/uploads/2019/06/01-1.png"
+                />
+                <div class="productName-div">
+                  <h1>
+                    Cappuccino 2
+                    <span
+                      >.................................................................</span
+                    >
+                    <span class="price"> $3.20</span>
+                  </h1>
+                  <p>Coffee 50%, milk 50%, 280 ml</p>
+                </div>
+              </div>
+            </mat-tab>
+            <mat-tab class="mat-ttab" label="Coffee">
+              <div class="menu-item-div">
+                <img
+                  alt=""
+                  class="item-img"
+                  src="http://kaffa.like-themes.com/wp-content/uploads/2019/06/01-1.png"
+                />
+                <div class="productName-div">
+                  <h1>
+                    Cappuccino 2
+                    <span
+                      >.................................................................</span
+                    >
+                    <span class="price"> $3.20</span>
+                  </h1>
+                  <p>Coffee 50%, milk 50%, 280 ml</p>
+                </div>
+              </div>
+            </mat-tab>
+            <mat-tab class="mat-ttab" label="Sweets">
+              <div class="menu-item-div">
+                <img
+                  alt=""
+                  class="item-img"
+                  src="http://kaffa.like-themes.com/wp-content/uploads/2019/06/03-1-110x110.png"
+                />
+                <div class="productName-div">
+                  <h1>
+                    Cappuccino 2
+                    <span
+                      >.................................................................</span
+                    >
+                    <span class="price"> $3.20</span>
+                  </h1>
+                  <p>Coffee 50%, milk 50%, 280 ml</p>
+                </div>
+              </div>
+            </mat-tab>
+            <mat-tab class="mat-ttab" label="Tea">
+              <div class="menu-item-div">
+                <img
+                  alt=""
+                  class="item-img"
+                  src="http://kaffa.like-themes.com/wp-content/uploads/2019/06/01-1.png"
+                />
+                <div class="productName-div">
+                  <h1>
+                    Cappuccino 2
+                    <span
+                      >.................................................................</span
+                    >
+                    <span class="price"> $3.20</span>
+                  </h1>
+                  <p>Coffee 50%, milk 50%, 280 ml</p>
+                </div>
+              </div>
+            </mat-tab>
+          </mat-tab-group>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cat-card-six-section">
+    <div class="container">
+      <div class="cat-card-six-sub-div">
+        <div class="Lounge-test-div">
+          <p class="loungeColor">Lounge Interior</p>
+          <p>with Calm</p>
+          <p>Music</p>
+          <p>for Chill Out</p>
+          <p class="short-dtls">
+            Fusce egestas velit tempus lacus molestie <br />
+            pharetra. Praesent sapien mi, posuere eu <br />
+            velit eu, pretium porttitor nunc
+          </p>
+          <button class="watch-Video-btn">
+            <span class="material-symbols-outlined play-Circle"
+              >play_circle</span
+            >Watch Video
+          </button>
+        </div>
+        <div class="cat-card-img-div">
+          <app-cat-card-six
+            *ngFor="let data of categoriesCardSix"
+            [data]="data"
+          ></app-cat-card-six>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END cat-card-six-section -->
+
+  <section class="home-contact">
+    <div class="home-contact-main">
+      <div class="container">
+        <div class="home-contact-sub">
+          <div class="home-contact-grid">
+            <div class="empty"></div>
+            <app-contact-form></app-contact-form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END Contact Section -->
+
+  <section class="cat-banner-section">
+    <div class="container">
+      <img alt="" class="iiimg" src="/assets/images/static/black-leaf.png" />
+      <div class="card-banner-maindiv">
+        <div class="Roasted-test-div">
+          <p class="RoastedColor">Roasted Brasilian Coffee</p>
+          <p>for Your Mood</p>
+          <p class="short-dtls">
+            In aliquam lobortis urna, vitae rutrum mauris tempus sit amet.
+            Vestibulum luctus vitae nisi interdum pretium. Pellentesque ex leo,
+            tempus vitae quam nec, mollis imperdiet velit. Suspendisse fringilla
+            enim
+          </p>
+          <!-- <button class="watch-Video-btn"><span class="material-symbols-outlined play-Circle">play_circle</span>Watch Video</button> -->
+          <div class="location-div">
+            <span class="material-symbols-outlined"> location_on </span>
+            <div class="address">
+              <h1>Our location:</h1>
+              <p>Rio de Janeiro, RJ Brazil, 04103 Route</p>
+            </div>
+          </div>
+          <a href="">Read More</a>
+        </div>
+        <div class="cat-banner-img-div imgdiv">
+          <img
+            alt=""
+            class="imgg"
+            src="../../../assets/images/static/black-coffee.png"
+          />
+          <img
+            alt=""
+            class="blackleap"
+            src="../../../assets/images/static/black-leaf-2.png"
+          />
+          <img
+            alt=""
+            class="blackleap1"
+            src="../../../assets/images/static/black-leaf-3.png"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END cat-card-banner-section -->
+
+  <section class="cat-card-two-section">
+    <div class="container">
+      <div class="content">
+        <app-cat-card-two
+          *ngFor="let data of overviews"
+          [data]="data"
+        ></app-cat-card-two>
+      </div>
+    </div>
+  </section>
+  <!-- END Home Overview -->
+
+  <section class="hero-section">
+    <div class="container">
+      <div class="background-image-color">
+        <div class="gird-row">
+          <div class="left-side-content">
+            <h2>
+              Coffee <br />
+              <span> Machines </span>
+            </h2>
+            <p>
+              Maecenas ut sodales dui, non vulputate nunc. Donec pulvinar arcu
+              sed nisi consectetur varius. Fusce consequat dictum imperdiet.
+              Etiam lacinia eu ante et bibendum.
+            </p>
+            <div class="content-btn">
+              <a href="#"> Read More </a>
+            </div>
+          </div>
+          <div class="right-side-image">
+            <div class="hero-image">
+              <img
+                alt=""
+                src="http://kaffa.like-themes.com/wp-content/uploads/2020/07/black-machine.png"
+              />
+            </div>
+            <div class="widget-image">
+              <img
+                alt=""
+                src="http://kaffa.like-themes.com/wp-content/uploads/2020/07/black-label.png"
+              />
+              <div class="widget-content">
+                <h3>-50%</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END Hero Section -->
+
+  <section class="product-card-one-section">
+    <div class="container">
+      <swiper
+        [breakpoints]="{
+          '350': {
+            slidesPerView: 1,
+            spaceBetween: 10
+          },
+          '600': {
+            slidesPerView: 2,
+            spaceBetween: 10
+          },
+          '800': {
+            slidesPerView: 3,
+            spaceBetween: 10
+          },
+          '1024': {
+            slidesPerView: 5,
+            spaceBetween: 10
+          }
+        }"
+        [pagination]="{
+          clickable: true
+        }"
+        [slidesPerView]="5"
+        [spaceBetween]="10"
+        class="mySwiper"
+      >
+        <ng-template *ngFor="let data of productCardOne" swiperSlide>
+          <div class="content">
+            <app-product-card-one [data]="data"></app-product-card-one>
+          </div>
+        </ng-template>
+      </swiper>
+    </div>
+    <div class="down-button">
+      <button>Read More</button>
+    </div>
+  </section>
+  <!-- END Product Card One Section -->
+</div>

@@ -1,0 +1,217 @@
+<!-- header-background section -->
+<section class="main-section">
+  <div class="header-area">
+<div class="container">
+  <div class="navbar-row">
+    <div class="logo">
+      <a href="">
+        <img
+          alt=""
+          src="../../../assets/images/logo/cdcl-logo.png"
+        />
+      </a>
+    </div>
+    <div class="navbar-item">
+      <ul>
+        <li>
+          <a routerLink="/"><span>Home</span></a>
+        </li>
+        <li>
+          <a routerLink="/about"><span>About US</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Products</span></a>
+        </li>
+        <li>
+          <a routerLink="/blog"><span>Blog</span></a>
+        </li>
+        <li>
+          <a routerLink="/contact"><span>Contact</span></a>
+        </li>
+      </ul>
+    </div>
+    <div class="navbar-icons">
+      <a href="#"
+        ><span class="fa-sharp fa-solid fa-phone-volume icon"></span
+        ><span class="number">0905-456-987-3</span></a
+      >
+    </div>
+    <div (click)="onToggle()" class="navbar-toggle">
+      <i [ngClass]="toggleMenu ? 'fas fa-bars' : 'fas fa-bars'"></i>
+      <!-- END Mobile View Menu -->
+    </div>
+    <div class="navbar-button">
+      <ul>
+        <li>
+          <a href="#"><i class="fa-solid fa-user"></i></a>
+        </li>
+        <li>
+          <a class="nav-link" href="#"
+            ><i class="fa-solid fa-bag-shopping"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="overlay">
+
+</div>
+<!-- toggle -->
+<div class="mobile-menu" [ngClass]="toggleMenu ? 'show' : 'hidden'">
+  <div class="toggle-menu">
+    <div class="container">
+      <div class="toggle-row">
+        <div class="toggle-top">
+          <div class="toggle-logo">
+            <a href="">
+              <img
+                alt=""
+                src="../../../assets/images/logo/cdcl-logo.png"
+              />
+            </a>
+          </div>
+          <div class="toggle-icon">
+            <i (click)="onToggle()" class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <div class="toggle-middle">
+          <ul class="toggle-menu">
+            <li><a routerLink="/">Home</a></li>
+            <li><a routerLink="/about">About US</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a routerLink="/blog">Blog</a></li>
+            <li><a routerLink="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="toggle-bottom">
+          <ul>
+            <a class="nav-link" href="#"
+              ><i class="fa-solid fa-bag-shopping"></i
+            ></a>
+            <span href="">0</span>
+            <a class="menu-children" href="#"
+              ><i class="fa-solid fa-user"></i
+            ></a>
+          </ul>
+          <div class="nav-search">
+            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+            <input placeholder="Search" type="text" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- background image -->
+<div class="banner-area">
+  <div class="banner-area-main">
+    <!---slide-->
+    <div class="slide">
+      <div class="banner-img">
+        <img src="../../../assets/images/static/inner_header-2.jpg" alt="" />
+        <div class="image-overlay"></div>
+      </div>
+      <div class="slide-text">
+        <h3>Nicaragua Traditional</h3>
+        <ul>
+          <li><a routerLink="/">Home</a></li>
+          <li>-</li>
+          <li>Nicaragua Traditional</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- product section -->
+<section class="product-main">
+  <div class="container">
+    <div class="grid-info">
+      <div class="pro-image">
+        <img
+          class="image-product"
+          src="http://kaffa.like-themes.com/wp-content/uploads/2019/06/product-black-02-600x852.jpg"
+        />
+      </div>
+      
+      <div class="information">
+        <p class="price">
+          <span><span>$</span>3.49</span>
+        </p>
+
+        <p class="details">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore veritatis et quasi architecto beatae vitae dicta
+          sunt explicabo.
+        </p>
+
+
+        <div class="catagory">
+          <span class="heading-tag">Category: </span><span>Black Coffee </span
+          ><br />
+          <span class="heading-tag">Tag: </span><span> arabica</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="mat-main-div">
+      <mat-tab-group class="mat-tab-groups" animationDuration="1000s"  >
+        <mat-tab label="Description">
+          <div class="content">
+            <p class="first-p">Donec pulvinar tellus eget magna aliquet ultricies.</p>
+            <p class="second-p">
+              Maecenas pulvinar ex a fermentum egestas. Curabitur tristique
+              aliquam felis, a blandit nisl consequat quis. Pellentesque
+              habitant morbi tristique senectus et netus et malesuada fames ac
+              turpis egestas. Etiam porttitor purus elit, sit amet viverra orci
+              pretium non. Sed libero lorem, eleifend at congue quis, semper
+              eget mauris. Nunc ullamcorper cursus libero a luctus. Nunc urna
+              neque, consectetur eget viverra pretium, tempor eu ex. Donec
+              faucibus, dui at consectetur gravida, nisi diam varius metus, sit
+              amet maximus orci eros nec felis. Ut nisi neque, condimentum id
+              magna non, sollicitudin lobortis nibh. Etiam in fermentum felis,
+              non venenatis augue. Donec quis ipsum tortor. Suspendisse tempor
+              turpis vitae velit pharetra, ac varius ipsum pharetra. Ut at metus
+              lobortis, porta tellus at, faucibus odio. Maecenas dictum quam
+              vulputate lacus pharetra, et iaculis erat scelerisque. Nullam nec
+              dui porta, ultricies leo nec, malesuada enim.
+            </p>
+          </div>
+        </mat-tab>
+        <mat-tab label="Reviews (0)	"> <div class="padding"></div> </mat-tab>
+      </mat-tab-group>
+    </div>
+
+    <div class="product-item">
+        <h2>Related products</h2>
+        <div class="grid-2">
+            <div class="card" *ngFor="let data of related" [data]="data">
+                <div class="images">
+                  <img [src]="data?.img" alt=" ">
+                  <div class="hover-button">
+                    <a routerLink="/product"><button>add to cart</button></a>
+                  </div>
+                </div>
+                <a routerLink="/product"><h6>{{data?.name}}</h6></a>
+                
+                <p>
+                  <del> {{data?.oprice}}</del> &nbsp;{{data?.price}}</p>
+                <div class="hover-button-2">
+                  <a routerLink="/product"><button>add to cart</button></a>
+                  
+                </div>
+              </div>
+        </div>
+
+       
+    </div>
+  </div>
+</section>
